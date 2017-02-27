@@ -95,6 +95,12 @@ app.get('/:articleName', function (req, res) { //articleName = article1
    res.send(createTemplate(articles[articleName]));
 });
 
+app.get('/counter', function (req, res) { //articleName = article1
+   //article[articleName]={}
+   counter = counter+1;
+   res.send(counter.toString());
+});
+
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });

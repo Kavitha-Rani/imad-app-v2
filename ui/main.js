@@ -1,8 +1,8 @@
 var button = document.getElementById('counter');
-var counter=0;
+var counter = 0;
 button.onclick = function(){
 //make a request to the counter endpoint
-var request= new XMLHttpRequest();
+
 //capture the response and store it in a variable
 
 //render  the variable in the correct span
